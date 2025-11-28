@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/customer.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+<body>
+    <table width="100%">
+    <tbody><tr>
+        <td align="left">
+            <!-- Company Logo -->
+            <img src="./Report_files/logos.png" alt="Company Logo" width="100">
+        </td>
+
+        <td align="center">
+            <h2>Employee Account Report</h2>
+        </td>
+
+        <td align="right">
+            <!-- Barcode Image -->
+            <img src="./Report_files/barcode.jpg" alt="Barcode" width="120">
+        </td>
+    </tr>
+</tbody></table>
+    
+    <table border="1" cellspacing="0" align="center" width="100%">
+<tbody><tr> 
+   <th rowspan="3"> SL</th>
+   <th rowspan="3">Emp Name</th> 
+   <th colspan="3">Account Type</th>
+   <th colspan="3">Bank Name</th>  
+   <th colspan="2"> Ledger Type</th> 
+   <th rowspan="3">Signature</th> 
+</tr>
+<tr>
+
+   <th rowspan="2">1</th>
+   <th rowspan="2">2</th>
+   <th rowspan="2"> 3</th>
+    <th colspan="3">Bank Type</th>
+    <th rowspan="2">1</th>
+    <th rowspan="2">2</th>
+</tr>
+ <tr>
+        
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        
+    </tr>
+     <tr>
+        <td rowspan="2">1</td>
+        <td>Dummy Name </td>
+        <td>A</td><td>B</td><td>C</td>
+        <td>D</td><td>E</td><td>F</td>
+        <td>A</td><td>B</td>
+        <td>Shahbaj</td>
+      
+    </tr>
+
+       <tr>
+        <td>Dummy Name </td>
+        <td>A</td><td>B</td><td>C</td>
+        <td>D</td><td>E</td><td>F</td>
+        <td>A</td><td>B</td>
+         <td>Shahbaj</td>
+     
+      
+    </tr>
+        <tr>
+        <td>2</td>
+        <td>Dummy Name </td>
+        <td>A</td><td>B</td><td>C</td>
+        <td>D</td><td>E</td><td>F</td>
+        <td>A</td><td>B</td>
+        <td>Shahbaj</td>
+      
+    </tr>
+    
+
+<tr>
+     <td rowspan="2">3 </td>
+        <td>Dummy Name </td>
+        <td>A</td><td>B</td><td>C</td>
+        <td>D</td><td>E</td><td>F</td>
+        <td>A</td><td>B</td>
+         <td rowspan="2">Shezan</td>
+    
+</tr>
+
+<tr>
+  
+        <td rowspan="2">Dummy Name  </td>
+        <td>A</td><td>B</td><td>C</td>
+        <td>D</td><td>E</td><td>F</td>
+        <td>A</td><td>B</td>
+        
+    
+</tr>
+
+
+       
+
+</tbody></table>
+</body></html>
